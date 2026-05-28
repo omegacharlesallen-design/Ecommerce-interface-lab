@@ -3,35 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+  <title>Welcome - LADIN'S STORE</title>
 </head>
 <body>
   <header>
-    <nav>
-      <ul>
-        <li><a href="product-listing.html">Category 1</a></li>
-        <li><a href="product-listing.html">Category 2</a></li>
-        <li><a href="product-listing.html">Category
-  </section>
-
-  <section> 3</a></li>
-        <li><a href="user-account.html">Account</a></li>
-      </ul>
-    </nav>
+    <div class="header-inner">
+      <a href="Landing.html" class="brand">🛍️ LADIN'S STORE</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="Landing.html" aria-current="page">Home</a></li>
+          <li><a href="Product.html">Products</a></li>
+          <li><a href="Cart.html">Cart</a></li>
+          <li><a href="Account.html">Account</a></li>
+          <li><a href="Signup.html">Sign Up</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section>
-    <h1>Welcome to Our Store!</h1>
-    <p>Find everything you need at the best prices.</p>
-    <a href="product-listing.html"><button>Shop Now</button></a>
-    <h2>Featured Products</h2>
-    <a href="product-detail.html">Product 1</a>
-    <a href="product-detail.html">Product 2</a>
-  </section>
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero" aria-label="Welcome section">
+      <div class="hero-content">
+        <h1>Welcome to Our Store!</h1>
+        <p class="hero-subtitle">Discover premium products at unbeatable prices</p>
+        <a href="Product.html" class="btn btn-primary">Shop Now</a>
+      </div>
+    </section>
 
-  <section>
-    <h2>Discounted Products</h2>
-    <a href="product-detail.html">Discounted Product 1</a>
-  </section>
+    <!-- Featured Products Section -->
+    <section class="featured-section" aria-labelledby="featured-heading">
+      <h2 id="featured-heading">Featured Products</h2>
+      <div class="products-container">
+        <article class="product-card">
+          <div class="product-image-wrapper">
+            <img src="Electric-Kettle.jpg" alt="Electric Kettle" loading="lazy" />
+          </div>
+          <h3>Electric Kettle</h3>
+          <p class="product-description">Fast and efficient boiling for your daily needs.</p>
+          <p class="product-price">Price: <span class="price">899.99</span></p>
+          <a href="detail.html" class="btn btn-secondary">View Details</a>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image-wrapper">
+            <img src="rice-cooker.jpg" alt="Rice Cooker" loading="lazy" />
+          </div>
+          <h3>Rice Cooker</h3>
+          <p class="product-description">Cook perfect rice every time with our easy-to-use cooker.</p>
+          <p class="product-price">Price: <span class="price">2,999.00</span></p>
+          <a href="detail.html" class="btn btn-secondary">View Details</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Discounted Products Section -->
+    <section class="discounted-section" aria-labelledby="discount-heading">
+      <h2 id="discount-heading">🎉 Discounted Products</h2>
+      <div class="products-container">
+        <article class="product-card featured-deal">
+          <div class="discount-badge">-20%</div>
+          <div class="product-image-wrapper">
+            <img src="Electric-Kettle.jpg" alt="Premium Electric Kettle" loading="lazy" />
+          </div>
+          <h3>Premium Electric Kettle</h3>
+          <p class="product-description">Experience fast and efficient boiling with our premium electric kettle.</p>
+          <p class="product-price">
+            <span class="original-price">₱2,499</span>
+            Price: <span class="price">₱1,999</span>
+          </p>
+          <a href="detail.html" class="btn btn-accent">Get Deal</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+<footer>
+  <div class="footer-inner">
+
+    <div class="footer-section">
+      <h3>About LADIN'S STORE</h3>
+      <p>
+        LADIN'S STORE offers premium gadgets and electronics
+        with affordable prices and trusted quality.
+      </p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+
+      <ul>
+        <li><a href="Product.html">Shop</a></li>
+        <li><a href="Cart.html">Cart</a></li>
+        <li><a href="Account.html">Account</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year-home">2026</span> LADIN'S STORE</p>
+  </div>
+</footer>
+
+
+  <script src="main.js" defer></script>
 </body>
 </html>
